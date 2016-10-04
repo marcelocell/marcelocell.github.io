@@ -1,12 +1,1678 @@
-<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<HTML>
-   <HEAD>
-      <TITLE>
-         Canta.ai 
-      </TITLE>
-   </HEAD>
-<BODY>
-   <H1>Canta.ai</H1>
-   <P>Página em construção.</P> 
-</BODY>
-</HTML>
+
+
+<html>
+
+<head>
+
+    <title>Lista de Músicas</title>
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" 
+    href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+    <script type="text/javascript" 
+    src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" 
+    src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/static/js/selecaomusica.js"></script>
+
+</head>
+
+<body>
+<input type='hidden' name='csrfmiddlewaretoken' value='RA3b4SfKzNdLxxoKFHc5FxXTxLMNPUzq' />
+<center><h1>Canta.aí</h1></center>
+
+<br>
+
+
+
+<br>
+<div class="table-responsive">
+    <table id="TabelaMusicas" class="display table" width="99%" >
+        <thead> 
+            <tr>
+                <th data-priority="3">Cod.</th>
+                <th data-priority="1">Música</th>
+                <th data-priority="1">Artista</th>
+                <th data-priority="2">Trecho Inicial</th>
+            </tr>
+        </thead> 
+        <tbody>
+            
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3001</td>
+                        <td>A BANDA DO ZÉ PRETINHO</td>
+                        <td>Jorge Benjor</td>
+                        <td>A Banda do Zé Pretinho Chegou
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3003</td>
+                        <td>A PRAÇA</td>
+                        <td>Ronnie Von</td>
+                        <td>Hoje eu acordei com saudades de você
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3451</td>
+                        <td>A PRIMEIRA VISTA</td>
+                        <td>Daniela Mercury</td>
+                        <td>Quando não tinha nada eu quis
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3351</td>
+                        <td>A PROMESSA</td>
+                        <td>Engenheiros do Hawaí</td>
+                        <td>Não vejo nada
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3352</td>
+                        <td>A SOMBRA DA MALDADE</td>
+                        <td>Cidade Negra</td>
+                        <td>Eu sei que ela
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3005</td>
+                        <td>A VIAGEM</td>
+                        <td>Roupa Nova</td>
+                        <td>Há tanto tempo que eu deixei você
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3452</td>
+                        <td>A VIDA NÃO PRESTA</td>
+                        <td>Léo Jaime</td>
+                        <td>Você vai de carro pra escola e eu só
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3453</td>
+                        <td>A VOLTA DO BOÊMIO</td>
+                        <td>Nélson Gonçalves</td>
+                        <td>Boemia aqui me tens de regresso
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3010</td>
+                        <td>ALGUÉM COMO TU</td>
+                        <td>Peri Ribeiro</td>
+                        <td>Alguém como tu assim como tu
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3353</td>
+                        <td>AMARRADOS</td>
+                        <td>Fábio Júnior</td>
+                        <td>Nós estamos amarrados um ao outro
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3454</td>
+                        <td>AMIGOS DO PEITO</td>
+                        <td>Turma do Balão Mágico</td>
+                        <td>Meu nome é Mike gosto muito de
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3014</td>
+                        <td>ANOS DOURADOS</td>
+                        <td>Severino Araújo</td>
+                        <td>Parece que dizes te amo Maria
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3015</td>
+                        <td>APENAS UM RAPAZ LATINO AMERICANO</td>
+                        <td>Belchior</td>
+                        <td>Eu sou apenas um rapaz
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3455</td>
+                        <td>APESAR DE VOCÊ</td>
+                        <td>Chico Buarque</td>
+                        <td>Amanhã vai ser outro dia
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3017</td>
+                        <td>ARA KETU BOM DEMAIS</td>
+                        <td>Ara Ketu</td>
+                        <td>Não dá pra esconder
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3018</td>
+                        <td>AS ROSAS NÃO FALAM</td>
+                        <td>Cartola</td>
+                        <td>Bate outra vez com esperanças
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3019</td>
+                        <td>ASA BRANCA</td>
+                        <td>Luiz Gonzaga</td>
+                        <td>Quando olhei a terra ardendo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3020</td>
+                        <td>ASA MORENA</td>
+                        <td>Zizi Possi</td>
+                        <td>Me faz pequena asa morena
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3021</td>
+                        <td>ASSIM CAMINHA A HUMANIDADE</td>
+                        <td>Lulu Santos</td>
+                        <td>Ainda vai levar um tempo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3354</td>
+                        <td>ATÉ DE MANHÃ</td>
+                        <td>Banda Bach</td>
+                        <td>Amor aquilo foi demais pra mim
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3023</td>
+                        <td>BAIANIDADE NAGÔ</td>
+                        <td>Banda Mel</td>
+                        <td>Já pintou o verão calor no coração
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3024</td>
+                        <td>BALANCÊ</td>
+                        <td>Gilberto Gil</td>
+                        <td>Oh balancê balancê
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3355</td>
+                        <td>BATUQUE</td>
+                        <td>Daniela Mercury</td>
+                        <td>Tá no batuque que balança nego
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3456</td>
+                        <td>BEIJA FLOR</td>
+                        <td>Timbalada</td>
+                        <td>Eu fui embora meu amor chorou
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3457</td>
+                        <td>BEIJINHO NA BOCA</td>
+                        <td>Beto Barbosa</td>
+                        <td>Beijinho na boca gostoso doce mel
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3030</td>
+                        <td>BEM QUE SE QUIS</td>
+                        <td>Marisa Monte</td>
+                        <td>Bem que se quis
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3458</td>
+                        <td>BESAME</td>
+                        <td>Leila Pinheiro</td>
+                        <td>A orquestra já nos chamou
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3032</td>
+                        <td>BIQUÍNI DE BOLINHA AMARELINHO</td>
+                        <td>Ed Wilson</td>
+                        <td>Ana Maria entrou na cabine
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3307</td>
+                        <td>BORBULHAS DE AMOR </td>
+                        <td>Fagner</td>
+                        <td>Tenho um coração dividido entre
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3459</td>
+                        <td>BRINCAR DE VIVER</td>
+                        <td>Maria Bethânia</td>
+                        <td>Quem me chamou quem vai querer
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3308</td>
+                        <td>BYE, BYE TRISTEZA</td>
+                        <td>Sandra de Sá</td>
+                        <td>Ninguém aqui é puro anjo ou demônio
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3460</td>
+                        <td>CABECINHA NO OMBRO</td>
+                        <td>Pirilampo e Saracura</td>
+                        <td>Encosta tua cabecinha no meu ombro 
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3356</td>
+                        <td>CADA UM NO SEU CADA UM</td>
+                        <td>Zeca Pagodinho</td>
+                        <td>Cada um na sua onda
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3310</td>
+                        <td>CAIU O PALCO</td>
+                        <td>Léo Canhoto e Robertinho</td>
+                        <td>Fui convidado pra cantar num baile
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3040</td>
+                        <td>CAPRICHO DOS DEUSES</td>
+                        <td>Netinho</td>
+                        <td>Numa noite de lua uma estrela da rua
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3461</td>
+                        <td>CAROLINE</td>
+                        <td>Raça Negra</td>
+                        <td>Você veio pra me fazer feliz
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3462</td>
+                        <td>CASA</td>
+                        <td>Lulu Santos</td>
+                        <td>Primeiro era vertigem como em
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3042</td>
+                        <td>CATEDRAL</td>
+                        <td>Zélia Duncan</td>
+                        <td>No deserto que atravesse
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3036</td>
+                        <td>CAÇA E CAÇADOR</td>
+                        <td>Fábio Júnior</td>
+                        <td>Você pintou como um sonho
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3037</td>
+                        <td>CAÇAMBA</td>
+                        <td>Molejo</td>
+                        <td>Traz a caçamba traz a caçamba
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3311</td>
+                        <td>CHORA TUA TRISTEZA</td>
+                        <td>Leny Andrade</td>
+                        <td>Chora que a tristeza foge do teu olhar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3357</td>
+                        <td>CHUVA DE PRATA</td>
+                        <td>Gal Costa</td>
+                        <td>Se tem luar no céu
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3463</td>
+                        <td>CIGANA</td>
+                        <td>Raça Negra</td>
+                        <td>Não deixe o tempo acabar com o
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3464</td>
+                        <td>CIÚME</td>
+                        <td>Ultraje a Rigor</td>
+                        <td>Eu quero levar uma vida moderninha
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3049</td>
+                        <td>CIÚME DE VOCÊ</td>
+                        <td>Raça Negra</td>
+                        <td>Se você demora mais um pouco
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3465</td>
+                        <td>COLEÇÃO</td>
+                        <td>Banda Eva</td>
+                        <td>Sei que você gosta de brincar de
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3314</td>
+                        <td>COMO É GRANDE O MEU AMOR POR VOCÊ</td>
+                        <td>Roberto Carlos</td>
+                        <td>Eu tenho tanto pra lhe falar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3054</td>
+                        <td>COPACABANA</td>
+                        <td>Dick Farney</td>
+                        <td>Existem praias tão lindas cheia de luz
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3317</td>
+                        <td>CORAL DE ANJOS</td>
+                        <td>Sensação</td>
+                        <td>Um coral de anjos cantou uma linda
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3055</td>
+                        <td>CORAÇÃO DE PAPEL</td>
+                        <td>Sérgio Reis</td>
+                        <td>Se você pensa que meu coração é 
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3358</td>
+                        <td>CORAÇÃO TE ACALMA</td>
+                        <td>Sampa Crew</td>
+                        <td>Quantas vezes eu te disse coração
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3318</td>
+                        <td>CORPO LÚCIDO</td>
+                        <td>Katinguelê</td>
+                        <td>Como é difícil entender por que
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3359</td>
+                        <td>CRENÇA E FÉ</td>
+                        <td>Banda Mel</td>
+                        <td>Vou dar a volta no mundo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3057</td>
+                        <td>DE REPENTE CALIFÓRNIA</td>
+                        <td>Lulu Santos</td>
+                        <td>Garota eu vou pra Califórnia
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3059</td>
+                        <td>DEIXA CHOVER</td>
+                        <td>Guilherme Arantes</td>
+                        <td>Certos dias de chuva
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3062</td>
+                        <td>DESCULPE, MAS EU VOU CHORAR</td>
+                        <td>Leandro e Leonardo</td>
+                        <td>As luzes da cidade acesa
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3466</td>
+                        <td>DESEJO DE AMAR</td>
+                        <td>Eliana de Lima</td>
+                        <td>Foi sem querer que derramei toda
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3065</td>
+                        <td>DOCE VAMPIRO</td>
+                        <td>Rita Lee</td>
+                        <td>Venha me beijar meu doce vampiro
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3068</td>
+                        <td>DONA </td>
+                        <td>Roupa Nova</td>
+                        <td>Dona desses traiçoeiros
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3360</td>
+                        <td>DÓI </td>
+                        <td>Roberta Miranda</td>
+                        <td>Dói sentir que o nosso amor aos
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3323</td>
+                        <td>EDUARDO E MÔNICA</td>
+                        <td>Legião Urbana</td>
+                        <td>Quem um dia irá dizer que existe razão
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3361</td>
+                        <td>ENDOIDECEU</td>
+                        <td>Fagner</td>
+                        <td>Você endoideceu meu coração
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3468</td>
+                        <td>ENGENHO DE DENTRO</td>
+                        <td>Jorge Benjor</td>
+                        <td>Olhaí meu bem prudência e dinheiro
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3075</td>
+                        <td>ERA UM GAROTO</td>
+                        <td>Engenheiros do Hawaí</td>
+                        <td>Era um garoto que como eu
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3076</td>
+                        <td>ESCRITO NAS ESTRELAS</td>
+                        <td>Tetê Espíndola</td>
+                        <td>Você pra mim foi o sol
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3078</td>
+                        <td>ESPANHOLA</td>
+                        <td>Sá e Guarabira</td>
+                        <td>Por tantas vezes eu andei mentindo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3362</td>
+                        <td>ESTOU APAIXONADO</td>
+                        <td>João Paulo e Daniel</td>
+                        <td>Quero beber o mel em sua boca
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3083</td>
+                        <td>ESTOU MAL</td>
+                        <td>Raça Negra</td>
+                        <td>Eu pensei que fosse fácil te esquecer
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3085</td>
+                        <td>ESTÚPIDO CUPIDO</td>
+                        <td>Cely Campelo</td>
+                        <td>Oh oh cupido vê se deixa em paz
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3469</td>
+                        <td>EU JURO</td>
+                        <td>Leandro e Leonardo</td>
+                        <td>Eu vejo a luz do teu olhar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3088</td>
+                        <td>EU MENTI</td>
+                        <td>Razão Brasileira</td>
+                        <td>Eu menti quando disse que não te
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3089</td>
+                        <td>EU NASCI HÁ DEZ MIL ANOS ATRÁS</td>
+                        <td>Raul Seixas</td>
+                        <td>Um dia numa rua da cidade
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3363</td>
+                        <td>EU NUNCA ESTIVE TÃO APAIXONADO</td>
+                        <td>Fábio Júnior</td>
+                        <td>O que eu pude eu vou fazer
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3470</td>
+                        <td>EU NÃO SEI DANÇAR</td>
+                        <td>Marina</td>
+                        <td>Às vezes eu quero chorar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3095</td>
+                        <td>EXAGERADO</td>
+                        <td>Cazuza</td>
+                        <td>Amor da minha vida
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3471</td>
+                        <td>FASCINAÇÃO</td>
+                        <td>Elis Regina</td>
+                        <td>Os sonhos mais lindos sonhei
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3098</td>
+                        <td>FAZ MAIS UMA VEZ COMIGO</td>
+                        <td>Leandro e Leonardo</td>
+                        <td>Não paro de rolar na cama
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3102</td>
+                        <td>FIO DE CABELO</td>
+                        <td>Chitãozinho e Xororó</td>
+                        <td>Quando a gente ama qualquer coisa
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3109</td>
+                        <td>GAROTA DE IPANEMA</td>
+                        <td>Os Cariocas</td>
+                        <td>Olha que coisa mais linda
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3472</td>
+                        <td>GAROTA NACIONAL</td>
+                        <td>Skank</td>
+                        <td>Aqui nesse mundinho fechado
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3114</td>
+                        <td>HOMEM COM H</td>
+                        <td>Ney Matogrosso</td>
+                        <td>Nunca vi rastro de cobra nem couro
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3364</td>
+                        <td>IDEOLOGIA</td>
+                        <td>Cazuza</td>
+                        <td>Meu partido é um coração partido
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3115</td>
+                        <td>ILARIÊ</td>
+                        <td>Xuxa</td>
+                        <td>Tá na hora tá na hora
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3366</td>
+                        <td>IOLANDA</td>
+                        <td>Simone</td>
+                        <td>Esta canção não é mais que
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3118</td>
+                        <td>ISSO AQUI TÁ BOM DEMAIS</td>
+                        <td>Dominguinhos</td>
+                        <td>Olha isso aqui tá muito bom
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3367</td>
+                        <td>LUA DE CRISTAL</td>
+                        <td>Xuxa</td>
+                        <td>Tudo pode ser se quiser será
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3473</td>
+                        <td>LUA E FLOR</td>
+                        <td>Oswaldo Montenegro </td>
+                        <td>Eu amava como amava um cantor
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3122</td>
+                        <td>LÁ VEM O NEGÃO</td>
+                        <td>Cravo e Canela</td>
+                        <td>Lá vem o negão cheio de paixão
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3368</td>
+                        <td>MACARENA</td>
+                        <td>Carlos Oliva/Los Sobrinos</td>
+                        <td>Dale a tu cuerpo alegria macarena
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3132</td>
+                        <td>MAIS UMA DE AMOR</td>
+                        <td>Blitz</td>
+                        <td>Perdi meu amor no paraíso
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3330</td>
+                        <td>MAJESTADE O SABIÁ</td>
+                        <td>Jair Rodrigues</td>
+                        <td>Meus pensamentos tomam formas
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3136</td>
+                        <td>MANUEL</td>
+                        <td>Ed Motta </td>
+                        <td>Manuel foi pro céu
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3369</td>
+                        <td>MARAVILHOSA</td>
+                        <td>Preto no Branco</td>
+                        <td>Estou sabendo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3370</td>
+                        <td>MARIA CHIQUINHA</td>
+                        <td>Sandy e Júnior</td>
+                        <td>Que cô cê foi fazê no mato Maria
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3138</td>
+                        <td>MARIANA, PARTE MINHA</td>
+                        <td>Sem Compromisso</td>
+                        <td>Se eu beijar a sua boca
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3140</td>
+                        <td>MARROM BOM BOM</td>
+                        <td>Os Morenos</td>
+                        <td>A gente tem tudo pra dar certo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3474</td>
+                        <td>MARYLOU</td>
+                        <td>Ultraje a Rigor</td>
+                        <td>Eu tinha uma galinha que se
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3371</td>
+                        <td>ME ABRAÇA</td>
+                        <td>Banda Eva</td>
+                        <td>Quando você passa eu sinto o seu
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3144</td>
+                        <td>ME LEVA</td>
+                        <td>Latino</td>
+                        <td>Moça eu não sei mais o que pensar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3372</td>
+                        <td>ME PEGUE SE QUISER</td>
+                        <td>Chiclete com Banana</td>
+                        <td>Me pegue se quiser e leve se puder ôh
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3150</td>
+                        <td>MELÔ DO TCHAN</td>
+                        <td>Gera Samba</td>
+                        <td>Pau que nasce torto nunca se endireita
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3151</td>
+                        <td>MEMÓRIAS</td>
+                        <td>Fafá de Belém</td>
+                        <td>Você foi a maior das minhas
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3152</td>
+                        <td>MENINA</td>
+                        <td>Netinho</td>
+                        <td>Menina que um dia eu conheci criança
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3475</td>
+                        <td>MESMO ASSIM</td>
+                        <td>Sampa Crew</td>
+                        <td>Foram tantas coisas boas
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3155</td>
+                        <td>MEU ERRO</td>
+                        <td>Paralamas do Sucesso</td>
+                        <td>Eu quis dizer você não quis escutar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3373</td>
+                        <td>MEU JEITO DE SER</td>
+                        <td>Só Pra Contrariar</td>
+                        <td>Era só dizer pra mim que não sentia
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3476</td>
+                        <td>MINHA ESTRELA PERDIDA</td>
+                        <td>João Paulo e Daniel</td>
+                        <td>Você vai rir quando eu pedir
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3477</td>
+                        <td>MINHA VIDA</td>
+                        <td>Lulu Santos</td>
+                        <td>Quando eu era pequeno eu achava a
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3162</td>
+                        <td>MUDA DE VIDA</td>
+                        <td>Zezé Di Camargo e Luciano</td>
+                        <td>Não sei aonde eu ando com a cabeça
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3374</td>
+                        <td>MULATA ASSANHADA</td>
+                        <td>Elza Soares</td>
+                        <td>Ô mulata assanhada
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3332</td>
+                        <td>MULHERES</td>
+                        <td>Martinho da Vila</td>
+                        <td>Já tive mulheres de todas as cores
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3333</td>
+                        <td>MÚSICA DE RUA</td>
+                        <td>Daniela Mercury</td>
+                        <td>Alegria agora agora e amanhã
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3375</td>
+                        <td>NA BOQUINHA DA GARRAFA</td>
+                        <td>Companhia do Pagode</td>
+                        <td>No samba ela me diz que rala
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3478</td>
+                        <td>NA RUA, NA CHUVA, NA FAZENDA</td>
+                        <td>Kid Abelha</td>
+                        <td>Não estou disposto
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3479</td>
+                        <td>NASCEMOS PRA CANTAR</td>
+                        <td>Chitãozinho e Xororó</td>
+                        <td>O grande mestre do céu o nosso
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3480</td>
+                        <td>NEM UM TOQUE</td>
+                        <td>Rosana</td>
+                        <td>Tanta coisa pra dizer e a gente nem se
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3376</td>
+                        <td>NO COMPASSO DO CRIADOR</td>
+                        <td>Katinguelê</td>
+                        <td>Ao teu lado sou criança nosso amor é 
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3175</td>
+                        <td>NOS VAMOS INVADIR A SUA PRAIA</td>
+                        <td>Ultraje a Rigor</td>
+                        <td>Daqui do morro dá pra ver tão legal
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3170</td>
+                        <td>NÃO QUERO DINHEIRO, SÓ QUERO AMAR</td>
+                        <td>Tim Maia</td>
+                        <td>Vou pedir pra você voltar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3182</td>
+                        <td>O BARQUINHO</td>
+                        <td>Maysa</td>
+                        <td>Dia de luz festa do sol
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3185</td>
+                        <td>O BICHO</td>
+                        <td>Ricardo Chaves</td>
+                        <td>Quando o vento bater nos seus
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3186</td>
+                        <td>O BOM </td>
+                        <td>Eduardo Araújo</td>
+                        <td>Meu carro é vermelho
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3481</td>
+                        <td>O MAIS BELO DOS BELOS</td>
+                        <td>Daniela Mercury</td>
+                        <td>Quem é que sobe a ladeira do
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3377</td>
+                        <td>O NOSSO AMOR A GENTE INVENTA</td>
+                        <td>Cazuza</td>
+                        <td>O teu amor é uma mentira
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3482</td>
+                        <td>O QUE EU FAÇO SEM VOCÊ</td>
+                        <td>Raça Negra</td>
+                        <td>O que eu faço sem você
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3378</td>
+                        <td>O QUE É QUE HÁ</td>
+                        <td>Fábio Júnior</td>
+                        <td>O que é que há ?
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3483</td>
+                        <td>O TEU CHAMEGO</td>
+                        <td>Grupo Raça</td>
+                        <td>Na vida se promete mais
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3197</td>
+                        <td>OLHAR 43</td>
+                        <td>RPM</td>
+                        <td>Seu corpo é o fruto proibido
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3484</td>
+                        <td>OMBRO AMIGO</td>
+                        <td>Cristina Monteiro</td>
+                        <td>Você apareceu ferido
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3379</td>
+                        <td>PACATO CIDADÃO</td>
+                        <td>Skank</td>
+                        <td>Oh pacato cidadão eu te chamei
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3380</td>
+                        <td>PAI</td>
+                        <td>Fábio Júnior</td>
+                        <td>Pai, pode ser que daqui a
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3381</td>
+                        <td>PAQUEREI</td>
+                        <td>Gera Samba</td>
+                        <td>É o novo som de salvador
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3205</td>
+                        <td>PARABÉNS A VOCÊ</td>
+                        <td>Parabéns à Você</td>
+                        <td>Parabéns pra você
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3339</td>
+                        <td>PAZ DO MEU AMOR</td>
+                        <td>Luiz Vieira</td>
+                        <td>Você é isso uma beleza imensa
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3341</td>
+                        <td>PEDRA FALSA</td>
+                        <td>Cristina Monteiro</td>
+                        <td>Deixa de bobagem corta essa de viver
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3210</td>
+                        <td>PELADOS EM SANTOS</td>
+                        <td>Mamonas Assassinas</td>
+                        <td>Mina seus cabelos é da hora
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3382</td>
+                        <td>PELO MENOS UMA VEZ</td>
+                        <td>Simoní e Alexandre Pires</td>
+                        <td>Descansei a dor no azul do mar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3213</td>
+                        <td>PERFUME SIAMÊS</td>
+                        <td>Emílio Santiago</td>
+                        <td>Mas que prazer te rever que bom
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3216</td>
+                        <td>PINTURA ÍNTIMA</td>
+                        <td>Kid Abelha</td>
+                        <td>Vem amor que a hora é essa
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3221</td>
+                        <td>PRA COMEÇAR</td>
+                        <td>Marina</td>
+                        <td>Pra começar quem vai colar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3222</td>
+                        <td>PRA DANÇAR COM VOCÊ</td>
+                        <td>Sandy e Júnior</td>
+                        <td> No baile da escola eu espero você
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3383</td>
+                        <td>PREFIXO DE VERÃO</td>
+                        <td>Banda Mel</td>
+                        <td>Quando você chegar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3485</td>
+                        <td>PRETA</td>
+                        <td>Beto Barbosa</td>
+                        <td>Preta fala pra mim
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3224</td>
+                        <td>PROVA DE FOGO</td>
+                        <td>Wanderléia</td>
+                        <td>Esta é uma prova de fogo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3203</td>
+                        <td>PÃO DE MEL</td>
+                        <td>Zezé Di Camargo e Luciano</td>
+                        <td>Você é minha luz estrada meu
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3226</td>
+                        <td>QUANDO CHOVE</td>
+                        <td>Patrícia Marx</td>
+                        <td>Quando olho nos teus olhos não vejo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3232</td>
+                        <td>QUE SE CHAMA AMOR</td>
+                        <td>Só Pra Contrariar</td>
+                        <td>Como é que uma coisa assim
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3384</td>
+                        <td>QUEREM MEU SANGUE</td>
+                        <td>Cidade Negra</td>
+                        <td>Dizem que guardam bom lugar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3486</td>
+                        <td>QUERER É PODER</td>
+                        <td>Xuxa e José Augusto</td>
+                        <td>Eu posso ir onde eu quiser
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3235</td>
+                        <td>QUERO QUE VÁ TUDO PRO INFERNO</td>
+                        <td>Roberto Carlos</td>
+                        <td>De que vale o céu azul e o sol
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3487</td>
+                        <td>RECADO Á MINHA AMADA</td>
+                        <td>Katinguelê</td>
+                        <td>Lua vai iluminar os pensamentos dela
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3488</td>
+                        <td>REFRÃO DE BOLERO</td>
+                        <td>Engenheiros do Hawaí</td>
+                        <td>Eu que falei nem pensar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3489</td>
+                        <td>REI DO GADO</td>
+                        <td>Orquestra da Terra</td>
+                        <td>Sou desse chão onde o rei é peão
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3236</td>
+                        <td>REQUEBRA</td>
+                        <td>Olodum</td>
+                        <td>Oh requebra requebra requebra sim
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3385</td>
+                        <td>RIO BABILÔNIA</td>
+                        <td>Fernanda Abreu</td>
+                        <td>Há há ei ei há há ei ei
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3237</td>
+                        <td>RITMO DA CHUVA</td>
+                        <td>Jovem Guarda</td>
+                        <td>Olho para a chuva que não quer cessar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3238</td>
+                        <td>ROBOCOP GAY</td>
+                        <td>Mamonas Assassinas</td>
+                        <td>Um tanto quanto másculo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3490</td>
+                        <td>SAFADA</td>
+                        <td>Wando</td>
+                        <td>Eu te quero assim
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3386</td>
+                        <td>SALVA MEU CORAÇÃO</td>
+                        <td>Zezé Di Camargo e Luciano</td>
+                        <td>Sou Louco pelo mel da sua boca
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3387</td>
+                        <td>SAMBA PRA MOÇAS</td>
+                        <td>Zeca Pagodinho</td>
+                        <td>Incandiá incandiou 
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3388</td>
+                        <td>SAUDADE DANADA</td>
+                        <td>Eliana de Lima</td>
+                        <td>Como dói a solidão preciso do
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3251</td>
+                        <td>SAUDOSA MALOCA</td>
+                        <td>Demônios da Garoa</td>
+                        <td>Se o sinhô não tá lembrado
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3389</td>
+                        <td>SEMPRE SERÁ</td>
+                        <td>Ara Ketu</td>
+                        <td>Gosto de ficar te olhando
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3390</td>
+                        <td>SEMPRE SOU EU</td>
+                        <td>Cristina Monteiro- L.Carlos</td>
+                        <td>É...mais uma vez estou chorando
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3491</td>
+                        <td>SEU AMOR JÁ TERMINOU</td>
+                        <td>Raça Negra</td>
+                        <td>Seu amor já terminou você já nem
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3493</td>
+                        <td>SOL DE PRIMAVERA</td>
+                        <td>Beto Guedes/R. Bastos</td>
+                        <td>Quando entrar setembro
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3391</td>
+                        <td>SONHO MEU</td>
+                        <td>Maria Bethânia</td>
+                        <td>Sonho meu sonho meu
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3494</td>
+                        <td>SOZINHO</td>
+                        <td>Raça Negra</td>
+                        <td>Todo aquele sonho que sonhei
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3259</td>
+                        <td>SÓ LOUCO</td>
+                        <td>Nana Caymmi</td>
+                        <td>Só louco amou como eu amei
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3492</td>
+                        <td>SÓ VOCÊ</td>
+                        <td>Vinícius Cantuária</td>
+                        <td>Demorei muito pra te encontrar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3266</td>
+                        <td>TARDE EM ITAPOÃ</td>
+                        <td>Toquinho e Vinícius</td>
+                        <td>Um velho calção de banho
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3495</td>
+                        <td>TE QUERO COMIGO</td>
+                        <td>Raça Negra</td>
+                        <td>Não dá pra ficar sem você
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3393</td>
+                        <td>TE VER</td>
+                        <td>Skank</td>
+                        <td>Te ver e não te querer
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3496</td>
+                        <td>TEU CAFUNÉ </td>
+                        <td>Maurício Mattar</td>
+                        <td>Amor me espere daqui a pouco eu vou
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3394</td>
+                        <td>TOTALMENTE DEMAIS</td>
+                        <td>Hanói Hanói</td>
+                        <td>Linda como um nenen
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3273</td>
+                        <td>TREM DAS ONZE</td>
+                        <td>Demônios da Garoa</td>
+                        <td>Não posso ficar nem mais um minuto
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3277</td>
+                        <td>TROPICANA</td>
+                        <td>Alceu Valença</td>
+                        <td>Da manga rosa quero o gosto e o
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3497</td>
+                        <td>TUDO BEM</td>
+                        <td>Lulu Santos</td>
+                        <td>Mas o teu amor me cura
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3498</td>
+                        <td>TUDO PASSARÁ</td>
+                        <td>Nélson Ned</td>
+                        <td>Eu te dei meu amor
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3392</td>
+                        <td>TÃO SÓ</td>
+                        <td>Só Pra Contrariar</td>
+                        <td>Eu fiquei sozinho mais uma noite
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3280</td>
+                        <td>UM DIA DE DOMINGO</td>
+                        <td>Gal Costa</td>
+                        <td>Eu preciso te falar
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3395</td>
+                        <td>UM HOMEM QUANDO AMA</td>
+                        <td>Chitãozinho e Xororó</td>
+                        <td>Amigo, se você ama não tenha medo
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3499</td>
+                        <td>UM PRO OUTRO</td>
+                        <td>Lulu Santos</td>
+                        <td>Foi bom te ver de novo aqui
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3348</td>
+                        <td>UMA BARATA CHAMADA KAFKA</td>
+                        <td>Inimigos do Rei</td>
+                        <td>Encontrei uma barata na cozinha
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3285</td>
+                        <td>VALEU DEMAIS</td>
+                        <td>Art Popular</td>
+                        <td>Ai valeu demais valeu valeu demais
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3286</td>
+                        <td>VEM QUENTE QUE EU ESTOU FERVENDO</td>
+                        <td>Erasmo Carlos</td>
+                        <td>Se você quer brigar e acha que com
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3397</td>
+                        <td>VENENO DA LATA</td>
+                        <td>Fernanda Abreu</td>
+                        <td>Mil novecentos e noventa e cinco
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3287</td>
+                        <td>VENTO E VENTANIA</td>
+                        <td>Biquíni Cavadão</td>
+                        <td>Vento e ventania me leve para as
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3500</td>
+                        <td>VERDADE CHINESA</td>
+                        <td>Emílio Santiago</td>
+                        <td>Era só isso que eu queria da vida
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3398</td>
+                        <td>VERDADE PAIXÃO</td>
+                        <td>Sampa Crew</td>
+                        <td>Eu vou além de mim sem nada temer
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3399</td>
+                        <td>VIDA BANDIDA</td>
+                        <td>Um Toque a Mais</td>
+                        <td>Vida bandida que me traz tristeza
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3288</td>
+                        <td>VINTE E POUCOS ANOS</td>
+                        <td>Fábio Júnior</td>
+                        <td>Você já sabe me conhece muito bem
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3400</td>
+                        <td>VOCÊ EM MIM</td>
+                        <td>Muleke Travesso</td>
+                        <td>Hoje eu me encontro na solidão
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3294</td>
+                        <td>VOCÊ VAI VER</td>
+                        <td>Zezé Di Camargo e Luciano</td>
+                        <td>Você pode encontrar muitos amores
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3396</td>
+                        <td>VÁ COM DEUS</td>
+                        <td>Roberta Miranda</td>
+                        <td>A cada dia que se passa
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3298</td>
+                        <td>WAVE</td>
+                        <td>Tom Jobim</td>
+                        <td>Vou te contar os olhos já não podem
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3301</td>
+                        <td>À FRANCESA</td>
+                        <td>Marina</td>
+                        <td>Meu amor se você for embora
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3467</td>
+                        <td>É DEMAIS</td>
+                        <td>Negritude Júnior</td>
+                        <td>Gosto muito de você não preciso nem
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3071</td>
+                        <td>É O AMOR</td>
+                        <td>Zezé Di Camargo e Luciano</td>
+                        <td>Eu não vou negar que sou louco
+</td>
+                    </tr>
+                
+                    <tr align=middle onClick="solicitaSenha()" style="cursor: pointer">
+                        <td>3365</td>
+                        <td>ÍNDIA</td>
+                        <td>Cascatinha e Inhana</td>
+                        <td>Índia seus cabelos
+</td>
+                    </tr>
+                
+            
+        </tbody>
+    </table>
+</div>
+
+<script>
+        $(document).ready(function () {
+            $('#TabelaMusicas').DataTable({
+                "language": {
+                    "sEmptyTable": "Nenhuma música encontrada",
+                    "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ músicas",
+                    "sInfoEmpty": "Mostrando 0 até 0 de 0 músicas",
+                    "sInfoFiltered": "(Filtrados de _MAX_ músicas)",
+                    "sInfoThousands": ".",
+                    "sLengthMenu": "Mostar _MENU_ músicas por página",
+                    "sLoadingRecords": "Carregando...",
+                    "sProcessing": "Processando...",
+                    "sZeroRecords": "Nenhuma música encontrada",
+                    "sSearch": "Procurar",
+                    "oPaginate": {
+                        "sNext": "Próxima",
+                        "sPrevious": "Anterior",
+                        "sFirst": "Primeira",
+                        "sLast": "Última"
+                    }
+                },
+                "order": [1, 'asc'],
+                "lengthMenu": [ 20, 50, 100 ],
+            });
+        });
+</script>
+
+</body>
+
+</html>
