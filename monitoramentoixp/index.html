@@ -1,0 +1,229 @@
+<html>
+	<head>
+		<title>Monitoramento - IX.br</title>
+	</head>
+	<body onload="LoadPage();">
+		<table width=90% align="center">
+			<tr>
+				<td align="center">
+					<h2 id="name1">MGMT Uplink entre Centrais (C1 x C2)<h2>
+				</td>
+				<td align="center">
+					<h2 id="name2">Uplink Router 1 GVT - 100Gb<h2>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<img src="http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/c1_c2_bps-day.png" id="graf1"><br><br>
+				</td>
+				<td align="center">
+					<img src="http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/gvtr1_bps-day.png" id="graf2"><br><br>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<h2 id="name3">Uplink Router 1 JD - GVT - 200Gb<h2>
+				</td>
+				<td align="center">
+					<h2 id="name4">Uplink LAG 2 Internexa -Level3 - 30Gb<h2>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<img src="http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/gvt100gb_1_bps-day.png" id="graf3"><br><br>
+				</td>
+				<td align="center">
+					<img src="http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/internexa-lag1002_bps-day.png" id="graf4"><br><br>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<h2 id="name5">Amazon 1 - 30Gb<h2>
+				</td>
+				<td align="center">
+					<h2 id="name6">Amazon 2 - 30Gb<h2>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<img src="http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/amazon1_bps-day.png" id="graf5"><br><br>
+				</td>
+				<td align="center">
+					<img src="http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/amazon2_bps-day.png" id="graf6"><br><br>
+				</td>
+			</tr>
+		</table>
+		
+		<div align="right">
+			<button id="btStop" OnClick="StopAndGo()">Parar Atualização</button>
+		</div>
+		fonte: <a href="http://sp.ptt.br/mgmt/uplinks.html">http://sp.ptt.br/mgmt/uplinks.html</a>
+	</body>
+
+	<script type="text/javascript">
+		var i = 0;
+		var stop = false;
+
+		function StopAndGo(){
+			if (stop){
+				stop = false;
+				document.getElementById('btStop').innerHTML = "Parar Atualização";
+			}
+			else {
+				stop = true;
+				document.getElementById('btStop').innerHTML = "Continuar Atualização";
+			}
+		}
+
+		function LoadPage() {
+			setTimeout(function() {
+				if (!stop){
+					i++;
+				}
+
+				switch (i) {
+					case 1:
+					// Graficos do Google
+						document.getElementById('name1').innerHTML = "Uplink GOOGLE L3 hundredGigE 0/3/0/0 - 100Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/google1-l3_bps-day.png";
+						document.getElementById('name2').innerHTML = "Uplink Google L3 hundredGigE 0/3/0/1 - 100Gb";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/google2-l3_bps-day.png";
+
+						document.getElementById('name3').innerHTML = "Uplink Router Google Bundle L3 - 200Gb";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/google100-l3_bps-day.png";
+						document.getElementById('name4').innerHTML = "Uplink Router Google Bundle Terremark - 200Gb";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/google100-terremark_bps-day.png";
+
+						document.getElementById('name5').innerHTML = "Uplink GOOGLE Terremark hundredGigE 0/2/0/0 - 100Gb";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/google1-terremark_bps-day.png";
+						document.getElementById('name6').innerHTML = "Uplink Google Terremark hundredGigE 0/3/0/0 - 100Gb";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/google2-terremark_bps-day.png";
+						break;
+					case 2:
+					// Graficos da Globo
+						document.getElementById('name1').innerHTML = "Globo 2 - 100Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/globo2_bps-day.png";
+						document.getElementById('name2').innerHTML = "Globo 3 - 200Gb - C3";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/globo3_bps-day.png";
+					// Graficos do Facebook
+						document.getElementById('name3').innerHTML = "Facebook 1 - Verizon - Bundle1001 - 100Gb";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/facebook1_bps-day.png";
+						document.getElementById('name4').innerHTML = "Facebook 2 - Verizon - Bundle1004 - 100Gb";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/facebook2_bps-day.png";
+
+						document.getElementById('name5').innerHTML = "Facebook 3 - Equinix-SP2 - Bundle1008 - 100Gb";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/facebook3_bps-day.png";
+						document.getElementById('name6').innerHTML = "Facebook 4 - Equinix-SP2 - Bundle1009 - 100Gb";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/facebook4_bps-day.png";
+						break;
+					case 3:
+					// Graficos da Netflix
+						document.getElementById('name1').innerHTML = "Uplink Router NETFLIX Terremark - 260Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/netflix-terremark_bps-day.png";
+						document.getElementById('name2').innerHTML = "Uplink Router NETFLIX Alog- 260Gb";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/netflix-alog_bps-day.png";
+
+						document.getElementById('name3').innerHTML = "Uplink Router NETFLIX C2 - 400Gb";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/netflix-c2_bps-day.png";
+					// Graficos da Level3
+						document.getElementById('name4').innerHTML = "Level3 - SW110-Bunble1003 AGG Level3 - 50Gb";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw110-b1003-day.png";
+
+						document.getElementById('name5').innerHTML = "Level3 - SW12-P6 - 10Gb";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw12-1006-day.png";
+						document.getElementById('name6').innerHTML = "Level3 - SW12-P24 e P25 - 20Gb";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw12-1024-day.png";
+						break;
+					case 4:
+					// Gráficos dos LAG da Embratel
+						document.getElementById('name1').innerHTML = "Uplink LAG 1 Embratel - 40Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1001_bps-day.png";
+						document.getElementById('name2').innerHTML = "Uplink LAG 2 Embratel - 20Gb";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1002_bps-day.png";
+
+						document.getElementById('name3').innerHTML = "Uplink LAG 3 Embratel - 20Gb";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1003_bps-day.png";
+						document.getElementById('name4').innerHTML = "Uplink LAG 4 Embratel - 20Gb";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1004_bps-day.png";
+
+						document.getElementById('name5').innerHTML = "Uplink LAG 5 Embratel - 20Gb";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1005_bps-day.png";
+						document.getElementById('name6').innerHTML = "Uplink LAG 6 Embratel - 20Gb";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1006_bps-day.png";
+						break;
+					case 5:
+						document.getElementById('name1').innerHTML = "Uplink LAG 7 Embratel - 50Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1007_bps-day.png";
+						document.getElementById('name2').innerHTML = "Uplink LAG 8 Embratel - 10Gb";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1008_bps-day.png";
+
+						document.getElementById('name3').innerHTML = " Uplink LAG 12 Embratel - 50Gb";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1012_bps-day.png";
+						document.getElementById('name4').innerHTML = "Uplink LAG 13 Embratel - 30Gb";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1013_bps-day.png";
+
+						document.getElementById('name5').innerHTML = "Uplink LAG 14 Embratel - 20Gb";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/embratel-lag1014_bps-day.png";
+						document.getElementById('name6').innerHTML = "Uplink ASR9010 (.116) x SW40 - PIX Verizon 50Gb";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw40_bps-day.png";
+						break;
+					case 6:
+					// Graficos da Microsoft
+						document.getElementById('name1').innerHTML = "Microsoft Terremark - 120Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/microsoft-terremark_bps-day.png";
+						document.getElementById('name2').innerHTML = "Microsoft ALOG2 - 120Gb";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/microsoft-alog2_bps-day.png";
+					// Graficos de Uplinks Internos
+						document.getElementById('name3').innerHTML = "VERIZON - ATM";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/verizon-atm-day.png";
+						document.getElementById('name4').innerHTML = "usp - ATM";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/usp-atm-day.png";
+
+						document.getElementById('name5').innerHTML = "EquinixSP2 - ATM";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/equinixsp2-atm-day.png";
+						document.getElementById('name6').innerHTML = "C2 - ATM";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/c2-atm-day.png";
+						break;
+					case 7:
+						document.getElementById('name1').innerHTML = "Uplink ASR9922 C1(140) - Summit670(55) NIC.br - 40Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw55_bps-day.png";
+						document.getElementById('name2').innerHTML = "Uplink SW2 - GBLX - 70Gb";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw2_bps-day.png";
+
+						document.getElementById('name3').innerHTML = "Uplink SW08 - Alog 20Gb";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw48p5_bps-day.png";
+						document.getElementById('name4').innerHTML = "Uplink SW48 - Alog 40Gb";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw78_sw48_bps-day.png";
+
+						document.getElementById('name5').innerHTML = "Uplink SW69 x SW58 - PIX GVT-JD 30Gb";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw69p38_bps-day.png";
+						document.getElementById('name6').innerHTML = "Uplink SW69 x SW34 - PIX GVT-JD 30Gb";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw69p40_bps-day.png";
+						break;
+					case 8:
+						document.getElementById('name1').innerHTML = "Uplink SW69 x SW63 - PIX GVT-JD 30Gb";
+						document.getElementById('graf1').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw69p32_bps-day.png";
+						document.getElementById('name2').innerHTML = "Uplink ASR9006xSW12 - Level3 - 100Gb";
+						document.getElementById('graf2').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw12-asr_bps-day.png";
+
+						document.getElementById('name3').innerHTML = "Uplink ASR9006xSW66 - Eletronet - 100Gb";
+						document.getElementById('graf3').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw66_bps-day.png";
+						document.getElementById('name4').innerHTML = "Uplink ASR9010xSW28 - Terremark - 120Gb";
+						document.getElementById('graf4').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw28_bps-day.png";
+
+						document.getElementById('name5').innerHTML = "Uplink SW51 x SW49 - G8 - 30Gb";
+						document.getElementById('graf5').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw51-29-day.png";
+						document.getElementById('name6').innerHTML = "Uplink SW119 x SW67 - Eletronet - 80Gb";
+						document.getElementById('graf6').src = "http://sp.ptt.br/cgi-bin/mgmt/mrtg-rrd/sw67_bps-day.png";
+						break;
+					case 9:
+						location.reload(true)
+						break;
+				}
+				LoadPage();
+			}, 11000);
+		}
+	</script>
+</html>
